@@ -1,0 +1,38 @@
+.about {
+  padding: 6rem 0.25rem;
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: var(--text-h1);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  font-size: var(--text-body);
+  color: var(--color-text-main);
+}
+
+.quote {
+  font-style: italic;
+  font-weight: 800;
+  margin: 2rem 0;
+  color: var(--color-primary);
+}
+
+.quote-ref {
+  display: block;
+  font-weight: 800;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.about-btn {
+    background-color: var(--color-secondary);
+}

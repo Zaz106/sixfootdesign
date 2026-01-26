@@ -1,0 +1,37 @@
+.journey {
+  background-color: var(--color-background); /* White bg */
+  color: var(--color-text-main);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-graphic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.journey-content {
+  padding: 8rem 0.75rem 4rem;
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+}
+
+.journey h2 {
+  font-size: var(--text-h1);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.journey-text {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  font-size: var(--text-body);
+  color: var(--color-text-main);
+}
+
+.journey-btn {
+  background-color: var(--color-secondary);
+}
+

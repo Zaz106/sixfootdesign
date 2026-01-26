@@ -1,0 +1,22 @@
+.website-design {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.website-design-content {
+  width: 85%;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: var(--text-h1);
+  }
+
+  .website-design-content {
+    width: 95%;
+  }
+}

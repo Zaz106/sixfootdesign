@@ -1,0 +1,55 @@
+.what-we-value {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.value-content {
+  width: 85%; /* Match project cards width */
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.what-we-value h2 {
+  font-size: var(--text-h1);
+  color: var(--color-primary);
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.value-intro {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--color-text-main);
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-list li {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  color: var(--color-text-main);
+}
+
+.values-list li strong {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+}
+
+@media (max-width: 768px) {
+  .what-we-value h2 {
+    font-size: var(--text-h1);
+  }
+
+  .value-content {
+    width: 95%;
+  }
+}

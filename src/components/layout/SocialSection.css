@@ -1,0 +1,104 @@
+.social {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-title {
+    font-size: var(--text-h1);
+    margin-bottom: 3rem;
+    width: 90%;
+    max-width: var(--spacing-container);
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center; /* Center Mo and icons together */
+    align-items: center;
+    width: 90%;
+    max-width: var(--spacing-container);
+    gap: 8rem; /* Keep icons close to Mo */
+}
+
+.social-monster {
+    height: 450px; 
+    width: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+}
+
+.social-icon {
+    width: 110px; /* Slightly bigger icons for large screens */
+    height: 110px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: white;
+}
+
+.social-icon svg {
+    width: 55px; /* Proportional increase for SVG */
+    height: 55px;
+}
+
+.social-icon:hover {
+    background-color: white;
+    color: var(--color-primary);
+    transform: translateY(-8px) scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .social-container {
+        gap: 5rem;
+    }
+    .social-monster {
+        height: 350px;
+    }
+    .social-icon {
+        width: 75px;
+        height: 75px;
+    }
+    .social-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-container {
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .social-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .social-monster {
+        height: 250px; /* Mo is made smaller on mobile */
+    }
+    .social-links {
+        gap: 1.5rem;
+    }
+    .social-icon {
+        width: 65px; /* Icon size kept small for mobile */
+        height: 65px;
+    }
+    .social-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+}

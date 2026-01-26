@@ -1,0 +1,36 @@
+.why-we-do-this {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.why-content {
+  width: 85%; /* Match project cards width */
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.why-we-do-this h2 {
+  font-size: var(--text-h1);
+  color: var(--color-primary);
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.why-we-do-this p {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+  .why-we-do-this h2 {
+    font-size: var(--text-h1);
+  }
+
+  .why-content {
+    width: 95%;
+  }
+}

@@ -1,0 +1,27 @@
+import React from 'react';
+import './NewsSection.css';
+import Link from 'next/link';
+
+const NewsSection = () => {
+  return (
+    <section className="news">
+      <div className="section-header">
+        <h2>NEWS/BLOG</h2>
+      </div>
+      <div className="news-grid">
+        <div className="news-card">
+          <img src="/Blog image 1.png" alt="Blog 1" className="card-bg" />
+        </div>
+        <div className="news-card">
+          <img src="/Blog image 2.png" alt="Blog 2" className="card-bg" />
+        </div>
+        <div className="news-card">
+          <img src="/Blog image 3.png" alt="Blog 3" className="card-bg" />
+        </div>
+      </div>
+      <Link href="https://sixfootdesignco.blogspot.com/" target="_blank" rel="noopener noreferrer" className="btn news-btn">READ MORE</Link>
+    </section>
+  );
+};
+
+export default NewsSection;

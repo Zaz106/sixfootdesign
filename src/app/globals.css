@@ -1,12 +1,61 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --color-primary: #4B4F54;     /* Space Grey */
+  --color-accent: #FF5D00;      /* Orange - Vibrant */
+  --color-secondary: #87B18F;   /* Light Green */
+  --color-secondary-alt: #E9D558; /* Light Yellow */
+  --color-background: #ffffff;  /* White */
+  --color-text-main: #4B4F54;       /* Grey for main text */
+  --color-text-light: #ffffff;      /* White text */
+  --color-footer-bg: #4B4F54;
+
+  /* Spacing */
+  --spacing-container: 2000px;
+  --spacing-padding: 5rem 0.25rem;
+  
+  /* Layout */
+  --header-height: 80px;
+
+  /* Typography Scale - Desktop (Base) */
+  --text-display: 12rem;
+  --text-h1: 9.5rem;
+  --text-h2: 4rem;
+  --text-h3: 2rem;
+  --text-body: 1.125rem;
+  --text-small: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Laptop (1024px - 1366px) */
+@media (max-width: 1366px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --text-display: 10rem;
+    --text-h1: 7.5rem;
+    --text-h2: 4rem;
+    --text-h3: 2rem;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --text-display: 8rem;
+    --text-h1: 5.75rem;
+    --text-h2: 2.5rem;
+    --text-h3: 1.75rem;
+  }
+}
+
+/* Mobile (Under 768px) */
+@media (max-width: 768px) {
+  :root {
+    /* --header-height: 60px; Removed to keep header size consistent */
+    --text-display: 4.5rem;
+    --text-h1: 4rem;
+    --text-h2: 2.5rem;
+    --text-h3: 1.25rem;
+    --text-body: 1rem;
+    
+    --spacing-padding: 3rem 1.25rem;
   }
 }
 
@@ -14,14 +63,59 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-text-main);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bebas-neue), "Impact", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 1.4;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  font-family: var(--font-bebas-neue), "Impact", "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Base Button Styles */
+.btn {
+  display: inline-block;
+  font-family: var(--font-bebas-neue), "Impact", "Arial Black", sans-serif;;
+  text-transform: uppercase;
+  padding: 0.75rem 3.5rem;
+  border-radius: 13px;
+  background-color: var(--color-secondary); /* Default green button */
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #769c7e;
+}
+
+
+p {
+  font-family: var(--font-body);
 }
 
 * {
@@ -35,8 +129,20 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Utility / Global Layout */
+.container {
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  padding: 0 var(--spacing-padding);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }

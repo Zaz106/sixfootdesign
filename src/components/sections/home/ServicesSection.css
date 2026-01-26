@@ -1,0 +1,150 @@
+.services {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+  align-items: center;
+}
+
+.services-content {
+  width: 85%; /* Match project cards width */
+  margin: 0 auto 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h2 {
+  font-size: var(--text-h1);
+  color: var(--color-primary);
+  margin: 2rem auto 2rem;
+  width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 4rem;
+  width: fit-content;
+}
+
+.service-card {
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  text-align: left;
+  min-height: 450px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card h3 {
+  font-size: var(--text-h2);
+  margin-bottom: 2rem;
+  color: var(--color-text-light);
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.service-card ul li {
+  font-size: var(--text-body);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.service-price {
+  font-family: var(--font-heading);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.price-from {
+  font-size: var(--text-body);
+  font-weight: 400;
+  font-family: var(--font-bebas-neue);
+}
+
+.price-amount {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  font-family: var(--font-bebas-neue);
+  letter-spacing: 1.1;
+}
+
+.service-card.branding {
+  background-color: #e9d558;
+  color: var(--color-primary);
+}
+
+.service-card.illustration {
+  background-color: #87b18f;
+  color: white;
+}
+
+.service-card.illustration ul li::before {
+  color: white;
+}
+
+.service-card.advertising {
+  background-color: #ff5d00;
+  color: white;
+}
+
+.service-card.advertising ul li::before {
+  color: white;
+}
+
+.service-card.digital {
+  background-color: #4b4f54;
+  color: white;
+}
+
+.service-card.digital ul li::before {
+  color: white;
+}
+
+.services-btn {
+  background-color: var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services h2 {
+    font-size: var(--text-h1);
+  }
+
+  .services-content {
+    width: 95%;
+  }
+
+  .service-card {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+}

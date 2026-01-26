@@ -1,0 +1,35 @@
+.logo-design {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.logo-design-content {
+  width: 85%;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.faq-item ul {
+  margin: 1rem 0 0 1.5rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.faq-item ul li {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: var(--text-h1);
+  }
+
+  .logo-design-content {
+    width: 95%;
+  }
+}

@@ -1,0 +1,87 @@
+.footer {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 3rem 0; /* Vertical padding */
+    text-align: center;
+    overflow: hidden; /* Hide the overflow from the carousel */
+}
+
+.footer-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.footer-nav {
+    display: flex;
+    white-space: nowrap;
+}
+
+.footer-nav-track {
+    display: flex;
+    gap: 6rem; /* Sufficient gap between items */
+    padding-right: 6rem; /* Match the gap */
+    animation: scroll-left 40s linear infinite;
+}
+
+/* Pause animation on hover */
+.footer-carousel-container:hover .footer-nav-track {
+    animation-play-state: paused;
+}
+
+.footer-nav-track a {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    flex-shrink: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-nav-track a:hover {
+    color: var(--color-primary); /* Slight change on specific link hover if desired */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move by exactly 50% because we duplicated the items */
+        transform: translateX(-50%);
+    }
+}
+
+.footer-copy {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    font-weight: 400;
+}
+
+.footer-legal {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+
+.footer-legal:hover {
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .footer-nav-track a {
+        font-size: 2rem;
+    }
+    .footer-nav-track {
+        gap: 3rem;
+        padding-right: 3rem;
+        animation-duration: 25s; /* Faster on mobile due to less distance */
+    }
+}

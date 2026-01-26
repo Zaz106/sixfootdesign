@@ -1,0 +1,34 @@
+.process-workflow {
+  padding: var(--spacing-padding);
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.process-workflow-content {
+  width: 85%;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.faq-item ol {
+  margin: 1rem 0 0 1.5rem;
+  padding: 0;
+}
+
+.faq-item ol li {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: var(--text-h1);
+  }
+
+  .process-workflow-content {
+    width: 95%;
+  }
+}

@@ -1,0 +1,48 @@
+.meet-mo {
+  padding: var(--spacing-padding);
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.meet-mo-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.meet-mo h2 {
+  font-size: var(--text-h1);
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.meet-mo p {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mo-character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.mo-character img {
+  height: 350px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .meet-mo h2 {
+    font-size: var(--text-h2);
+  }
+  
+  .mo-character img {
+    height: 250px;
+  }
+}

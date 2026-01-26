@@ -1,0 +1,45 @@
+.contact-us-hero {
+  width: 100%;
+  margin-top: var(--header-height);
+  background-color: var(--color-background);
+  padding: 5rem 0.25rem 2rem;
+}
+
+.contact-us-hero-content {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0 3rem;
+  text-align: center;
+  color: var(--color-text-main);
+}
+
+.contact-us-hero-label {
+  font-size: var(--text-h3);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: var(--color-text-main);
+}
+
+.contact-us-hero-title {
+  font-size: var(--text-h1);
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+.contact-us-hero-text {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-us-hero-title {
+    font-size: var(--text-h1);
+  }
+
+  .contact-us-hero-content {
+    padding: 1rem 0 1rem;
+  }
+}
