@@ -1,7 +1,7 @@
 .news {
   padding: var(--spacing-padding);
   max-width: var(--spacing-container);
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   text-align: center;
 }
 

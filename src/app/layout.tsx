@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en" className={`${bebasNeue.variable} ${poppins.variable}`}>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );

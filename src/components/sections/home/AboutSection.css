@@ -1,5 +1,5 @@
 .about {
-  padding: 6rem 0.25rem;
+  padding: var(--spacing-padding);
   max-width: var(--spacing-container);
   margin: 0 auto;
   text-align: center;
