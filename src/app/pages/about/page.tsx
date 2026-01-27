@@ -7,7 +7,7 @@ import OurTeamSection from '@/components/sections/about/OurTeamSection';
 import WhyWeDoThisSection from '@/components/sections/about/WhyWeDoThisSection';
 import WhatWeValueSection from '@/components/sections/about/WhatWeValueSection';
 import MeetMoSection from '@/components/sections/about/MeetMoSection';
-import ServicesSection from '@/components/sections/home/ServicesSection';
+import ServicesSection from '@/components/sections/about/ServicesSection';
 import OurProcessSection from '@/components/sections/about/OurProcessSection';
 import SocialSection from '@/components/layout/SocialSection';
 import Footer from '@/components/layout/Footer';
