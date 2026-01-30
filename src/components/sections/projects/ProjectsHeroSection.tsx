@@ -16,7 +16,7 @@ const ProjectsHeroSection = () => {
           loop={false}
         />
         <p className="projects-hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          Thank you for checking out our portfolio page. Here you’ll find a curated selection of work showcasing some of our more recent design projects. Each piece reflects our passion for thoughtful design, strong visual storytelling, and building brands that are made to stand out and grow.
         </p>
       </div>
     </section>

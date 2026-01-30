@@ -12,15 +12,15 @@ const PortfolioPage3 = () => {
       heroImage: "/projects/Redseal Hero.png",
       accentColor: "var(--color-secondary)",
       aboutCompany:
-        "Red Seal is a trusted South African brand specializing in high-quality nutritional supplements and health products. With a commitment to wellness and natural ingredients, Red Seal has been helping South Africans live healthier lives for decades. Their product range includes vitamins, minerals, herbal remedies, and specialty health supplements designed to support overall well-being.",
+        "Established in 2022 by Earl Robertson, Red Seal Plumbing was founded with a clear mission: to provide comprehensive plumbing solutions at fair and transparent rates—without ever compromising on the quality of workmanship. With years of hands-on experience and a deep understanding of the industry, we are committed to delivering reliable, top-tier plumbing services for both residential and commercial clients. We understand that plumbing emergencies can be stressful and overwhelming. That’s why Red Seal Plumbing is dedicated to making emergency plumbing services as seamless and stress-free as possible. Our team not only responds quickly but also takes the time to guide clients through the process, ensuring clear communication and peace of mind at every stage.",
       brief:
-        "Red Seal approached Six Foot Design Co with the need for a comprehensive brand refresh and a modern, user-friendly website. The goal was to create a digital presence that reflected the brand's heritage and commitment to quality while appealing to a contemporary health-conscious audience. The website needed to showcase their extensive product range, provide educational content, and make it easy for customers to find and purchase products.",
+        "The company needed a logo that struck the perfect balance—professional and clean, with just the right amount of playfulness to stand out in a sea of generic plumbing logos. The goal was a brand that felt trustworthy, confident, and memorable without relying on overused industry clichés.",
       approach:
-        "We crafted a clean, professional brand identity and website that balances Red Seal's established reputation with a fresh, modern aesthetic. The design emphasizes natural, earthy tones that reflect the brand's focus on natural health products. The website features intuitive navigation, detailed product information, and a seamless e-commerce experience. We also incorporated educational content to help customers make informed decisions about their health and wellness journey.",
+        "We set out to create a brand identity that feels dependable, considered, and built to last. Moving away from obvious industry visuals, we explored a retro-inspired aesthetic that feels both familiar and distinctive, helping the brand stand out with confidence. Supporting patterns were introduced to add depth and consistency across applications, reinforcing the system as a whole. The result is a cohesive, professional identity that confidently delivers on its promise: Quality Plumbing. Signed, Sealed, Delivered.",
       quoteText:
-        "I cannot thank Jason and the team at Six Foot Design Co. enough for choosing to work with us. Jason's professionalism and dedication to delivering exactly what we envisioned was outstanding. He is always happy to help, and we couldn't be more pleased with the site. It feels personal, professional, and perfectly aligned with our brand.",
-      quoteAuthor: "RED SEAL TEAM",
-      thankYouText: "The Red Seal team for trusting us with your brand.",
+        "Six Foot Design can't thank them enough from concept to design brilliant, really happy with the logo and branding work done.",
+      quoteAuthor: "EARL",
+      thankYouText: "Earl for the ongoing partnership and Josh for the Dev.",
       websiteUrl: "https://redseal.co.za",
       buttonText: "VIEW THE PROJECT",
     },
@@ -30,12 +30,12 @@ const PortfolioPage3 = () => {
       heroImage: "/projects/Greenera Hero.png",
       accentColor: "var(--color-accent)",
       aboutCompany:
-        "Greenera is an innovative green energy company dedicated to providing sustainable solar solutions for residential and commercial clients across South Africa. With a focus on renewable energy and environmental responsibility, Greenera helps customers reduce their carbon footprint while saving on energy costs. Their services include solar panel installation, energy storage systems, and comprehensive energy audits.",
+        "GreenEra Energy provides renewable energy advice; design; supply, installation and maintenance of renewable technologies. We are GreenCard Certified and SAPVIA Approved to install Solar Photo Voltaic (Solar PV) and Energy Storage Systems. GreenEra Energy adheres to the Consumer Code. This encourages best practice in all our dealings with our customers. We will provide renewable energy advice on technologies that are suitable for the premises and will not undertake “hard selling”.",
       brief:
-        "Greenera needed a complete brand identity and website that would position them as leaders in the green energy space. The brief called for a modern, eco-friendly design that communicated trust, innovation, and environmental stewardship. The website needed to educate potential customers about solar energy, showcase their services, and provide an easy way to request quotes and consultations.",
+        "We were tasked with developing a brand that was immediately clear in its purpose, positioning the company as a provider of holistic renewable energy solutions.",
       approach:
-        "We developed a bold, vibrant brand identity centered around Greenera's commitment to sustainability and innovation. The color palette features bright greens and blues that evoke nature and clean energy. The website is designed to be informative and conversion-focused, with clear calls-to-action, customer testimonials, and detailed service information. We also integrated a quote calculator to help customers understand potential savings. The result is a brand and website that inspires confidence and makes going green accessible to everyone.",
-      thankYouText: "The Greenera team for sharing your vision with us.",
+        "Just as the business is built on three key service pillars — Renewable Energy Solutions, Carbon Footprint Auditing, and Energy Efficiency & Management — we took a strategic approach to the logo. Rather than trying to represent each service literally, we focused on the three core areas of renewables to clearly show that the business offers a balanced, holistic solution. The use of green and blue reinforces the eco-friendly nature of the brand and ties the identity together.",
+      thankYouText: "Hamanth for trusting us with your brand.",
       websiteUrl: "https://greenera.co.za",
       buttonText: "VIEW THE PROJECT",
     },
@@ -45,12 +45,12 @@ const PortfolioPage3 = () => {
       heroImage: "/projects/Garicon Hero.png",
       accentColor: "var(--color-secondary-alt)",
       aboutCompany:
-        "Garicon is a professional construction and project management company specializing in residential and commercial building projects throughout South Africa. With decades of combined experience, the Garicon team delivers high-quality construction services with a focus on craftsmanship, reliability, and client satisfaction. Their portfolio includes custom homes, renovations, commercial spaces, and large-scale development projects.",
+        "Garicon services has been serving as a leading Air Conditioning Contractor since 2005. As a fully-certified professional, we are ready to tackle anything from the most complex and large scale construction project to the smallest of repair jobs. We are fuelled by our commitment to excellence and go the extra mile to make sure my clients are completely satisfied with my work.",
       brief:
-        "Garicon approached Six Foot Design Co to create a professional landing page that would establish their online presence and generate quality leads. The page needed to showcase their expertise, highlight key projects, and provide an easy way for potential clients to get in touch. The design had to convey professionalism, reliability, and the quality of their work.",
+        "Every brand has an online starting point, this was Garicon’s. The brief was to keep it simple and within the small budget they had available.",
       approach:
-        "We designed a streamlined, impactful landing page that immediately communicates Garicon's expertise and professionalism. The page features high-quality project photography, clear service descriptions, and prominent contact forms to capture leads. We used a sophisticated color palette and clean typography to create a premium feel that matches the quality of their work. The page is fully responsive and optimized for conversions, making it easy for potential clients to learn about Garicon's services and start a conversation.",
-      thankYouText: "Garicon for the ongoing partnership.",
+        "We stuck closely to brand, understanding that those clients looking for air conditioning suppliers are looking for qualified individuals that can work with multiple brands. This formed the foundation to our strategy of including relevant and helpful information only, along with references to increase credibly.",
+      thankYouText: "Earl for the ongoing partnership.",
       websiteUrl: "https://garicon.co.za",
       buttonText: "VIEW THE PROJECT",
     },

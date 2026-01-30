@@ -16,7 +16,7 @@ const ContactUsHeroSection = () => {
           loop={false}
         />
         <p className="contact-us-hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          Have one of those burning questions we didn’t quite answer on our website, or ready to partner with us on a project? Let’s chat — we’d love to hear your story and explore how we can bring your ideas to life.
         </p>
       </div>
     </section>

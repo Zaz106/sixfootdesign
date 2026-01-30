@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutSection.css';
+import Link from 'next/link';
 
 const AboutSection = () => {
   return (
@@ -17,7 +18,7 @@ const AboutSection = () => {
         "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
         <span className="quote-ref">Colossians 3:23</span>
       </div>
-      <button className="btn about-btn">READ MORE ABOUT US</button>
+      <Link href="/pages/about" className="btn about-btn">READ MORE ABOUT US</Link>
     </section>
   );
 };

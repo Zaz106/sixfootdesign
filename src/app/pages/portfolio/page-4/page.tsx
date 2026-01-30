@@ -12,15 +12,15 @@ const PortfolioPage4 = () => {
       heroImage: "/projects/MJC Online Hero.png",
       accentColor: "var(--color-secondary-alt)",
       aboutCompany:
-        "MJC Distributors is a leading South African wholesale distributor specializing in beauty, cosmetics, and personal care products. With an extensive product range and competitive pricing, MJC serves salons, spas, retailers, and beauty professionals across the country. Their commitment to quality products and excellent customer service has made them a trusted partner in the beauty industry.",
+        "MJC Distributors are a premier food distribution company based in South Africa, delivering high-quality, reliable, and cost-effective solutions to businesses nationwide. With years of industry expertise and a dedication to excellence, we proudly serve some of South Africa's largest corporations, food service providers, and retailers.\n\nTheir mission is to ensure that every product we distribute adheres to the highest standards of quality, safety, and consistency. We specialize in the efficient and timely delivery of a diverse range of food products, from everyday essentials to specialized ingredients. Our clients can always rely on us to provide the products they need, when they need them, supporting their operations with seamless and dependable service.",
       brief:
-        "MJC Distributors needed a comprehensive online catalogue website that would allow their customers to easily browse their extensive product range, check stock availability, and place orders efficiently. The website needed to handle thousands of products across multiple categories while maintaining fast performance and an intuitive user experience. The goal was to modernize their ordering process and make it easier for customers to do business with MJC.",
+        "MJC Distributors approached us to create a clean, informative website built around their online catalogue, with the addition of thoughtful touches they hadn’t had before — but felt were needed to better support their customers.",
       approach:
-        "We developed a robust, user-friendly online catalogue system that showcases MJC's vast product range in an organized, searchable format. The website features advanced filtering and search capabilities, detailed product information, and a streamlined ordering process. We implemented a clean, professional design that puts the focus on the products while ensuring fast load times and mobile responsiveness. The result is a powerful e-commerce platform that has significantly improved MJC's customer experience and operational efficiency.",
+        "We kept things simple from wireframe to final build. One of our favourite parts of the project was designing a catalogue that’s easy to navigate and doesn’t overwhelm. We achieved this with a clean dropdown toggle that neatly reveals the categories, keeping everything clear, intuitive, and user-friendly.",
       quoteText:
-        "Working with Six Foot Design Co was an absolute game-changer for our business. Jason and his team took the time to understand our unique needs and delivered a website that not only looks fantastic but also functions flawlessly. The online catalogue has made it so much easier for our customers to browse and order, and we've seen a significant increase in sales since the launch. Their attention to detail, professionalism, and dedication to getting everything just right was truly impressive. We couldn't recommend them more highly!",
-      quoteAuthor: "MJC TEAM",
-      thankYouText: "Mark, Michelle, Madeline and team for the opportunity.",
+        "We recently had the pleasure of working with Jason from Six Foot Design Co, for our website project. We must say, the service provided was top-notch! Jason's passion for his work shines through in every interaction, making the process enjoyable and efficient. He is very hands-on and dedicated to delivering the best results. It was truly inspiring to collaborate with such a committed professional.",
+      quoteAuthor: "MONIEK",
+      thankYouText: "Mark, Moniek, Melissa and team for opportunity.",
       websiteUrl: "https://mjcdistributors.co.za",
       buttonText: "VIEW THE PROJECT",
     },
@@ -30,12 +30,12 @@ const PortfolioPage4 = () => {
       heroImage: "/projects/Atonement Illustration Hero.png",
       accentColor: "var(--color-secondary)",
       aboutCompany:
-        "Greenera Energy provides renewable energy advice, design, supply, installation and maintenance of alternative energy technologies including Grid-Tied PV, Hybrid Off-Grid and AC coupled PV, and Energy Storage Systems.",
+        "GreenEra Energy provides renewable energy advice; design; supply, installation and maintenance of renewable technologies. We are GreenCard Certified and SAPVIA Approved to install Solar Photo Voltaic (Solar PV) and Energy Storage Systems.\n\nGreenEra Energy adheres to the Consumer Code. This encourages best practice in all our dealings with our customers. We will provide renewable energy advice on technologies that are suitable for the premises and will not undertake “hard selling”.",
       brief:
-        "Greenera Energy designs to the Greenera Code. This encouraged best practice in all our dealings with our customers, we are provide renewable energy advise on technologies that are suitable for the priorities and aims of our customers. Think Greenera.",
+        "We were tasked with developing a brand that was immediately clear in its purpose, positioning the company as a provider of holistic renewable energy solutions.",
       approach:
-        "Take on the business as trust on three key service pillars — Renewable Energy Solutions, Custom Intelligent Building, and Energy Efficiency & Management — we took a strategic approach to the logo. Rather than trying to represent each service literally, we focused on the things each strand of renewables is aiming to achieve. A union of all 3 services, formed in a beautiful hexagonal shape all meeting in the Nature of the brand which ties the pieces together.",
-      thankYouText: "Nico Sticking for the opportunity.",
+        "Just as the business is built on three key service pillars — Renewable Energy Solutions, Carbon Footprint Auditing, and Energy Efficiency & Management — we took a strategic approach to the logo. Rather than trying to represent each service literally, we focused on the three core areas of renewables to clearly show that the business offers a balanced, holistic solution. The use of green and blue reinforces the eco-friendly nature of the brand and ties the identity together.",
+      thankYouText: "Nico Stickling for the opportunity.",
       websiteUrl: "https://www.cityonahill.co.za/contact",
       buttonText: "VIEW THE PROJECT",
     },
@@ -45,12 +45,12 @@ const PortfolioPage4 = () => {
       heroImage: "/projects/Traditional Wired Hero.png",
       accentColor: "var(--color-accent)",
       aboutCompany:
-        "Traditionally Wired Media is a vibrant creative agency specializing in brand development, graphic design, and multimedia content creation. With a fresh approach to traditional media and a passion for storytelling, TWM helps brands connect with their audiences in meaningful and memorable ways. Their work spans logo design, brand identity, video production, and social media content.",
+        "Traditionally Wired Media started as a stand against the notion that print media was rumoured to be dying or dead. Both founders being crafted by pages and audience figures of a medium perceived to add no more value by an industry who’s focus was captured by circulation declines and measurable data promises.",
       brief:
-        "Traditionally Wired Media approached Six Foot Design Co for a complete logo design and brand identity that would capture their unique blend of traditional and contemporary creative approaches. The brief called for a bold, memorable mark that communicated creativity, professionalism, and innovation. The logo needed to work across various applications, from business cards and stationery to digital platforms and video content.",
+        "We here approached by Traditionally Wired Media in 2020 to get them started with a simple logo.",
       approach:
-        "We created a dynamic, versatile logo that perfectly captures TWM's creative energy and professional approach. The design features bold typography and a distinctive mark that references both traditional media and modern innovation. The color palette is vibrant and attention-grabbing, reflecting the agency's creative personality. We developed comprehensive brand guidelines to ensure consistent application across all touchpoints. The result is a strong, memorable brand identity that sets TWM apart in the competitive creative services market.",
-      thankYouText: "Jason and Dominic for the opportunity.",
+        "They work across all media platforms, with a strong focus on print. We approached the identity with the understanding that print and digital are flexible, fluid mediums that work best in partnership—each complementing the other. Proudly South African at heart, these considerations guided the creation of a logo and wordmark that are simple, adaptable, and built to work seamlessly across every application.",
+      thankYouText: "Justin and Damion for opportunity.",
       websiteUrl: "https://traditionallywired.co.za",
       buttonText: "VIEW THE LOGO IN ACTION",
     },

@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import SplitText from '../../ui/SplitText';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
           from={{ opacity: 0, y: 40 }}
           to={{ opacity: 1, y: 0 }}
         />
-        <button className="btn hero-btn">VIEW THE PROJECT</button>
+        <Link href="/pages/projects" className="btn hero-btn">VIEW THE PROJECT</Link>
       </div>
     </section>
   );

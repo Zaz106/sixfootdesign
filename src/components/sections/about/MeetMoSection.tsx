@@ -7,7 +7,7 @@ const MeetMoSection = () => {
       <div className="meet-mo-content">
         <h2>MEET MO</h2>
         <p>
-          Mo is our studio mascot and brand ambassador. He represents the playful, innovative spirit of Six Foot Design Co. Mo is our imaginative character created as a mascot to embody the personality we strive to capture in all our projects. He stands out and makes a statement, just as our work does. Mo is a fun-loving character with a big heart and brings life to everything we do. Just like us, he loves creativity, good coffee, bold ideas, and making a lasting impression.
+          Mo, our mascot, is our brand in character form. He’s more of a Danny DeVito than an Arnold Schwarzenegger—small in stature but with a giant heart and an eye for potential. He embodies our mission: to see the hidden greatness in every brand,  helping businesses grow and thrive through creativity, connection, and  bold design.
         </p>
         <div className="mo-character">
           <img src="/Mo for social section.png" alt="Mo Character" />

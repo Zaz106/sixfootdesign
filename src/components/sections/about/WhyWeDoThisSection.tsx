@@ -1,5 +1,5 @@
-import React from 'react';
-import './WhyWeDoThisSection.css';
+import React from "react";
+import "./WhyWeDoThisSection.css";
 
 const WhyWeDoThisSection = () => {
   return (
@@ -7,13 +7,20 @@ const WhyWeDoThisSection = () => {
       <div className="why-content">
         <h2>WHY WE DO THIS</h2>
         <p>
-          We love family, to create, play, connect, work, and build through creative, performative, and meaningful endeavors.
+          We exist to help businesses grow, connect, and stand out through
+          creativity, partnership, and meaningful visual storytelling.
         </p>
         <p>
-          By making the right questions and truly understanding each brands we work through helps establish well-thought-out brand experiences. We guide our clients toward the best, most informed decision for their future. This requires trust, transparency, and patience. But the outcome is always worth it.
+          By asking the right questions and truly understanding each brand, we
+          craft thoughtful brand experiences tailored to startups and small to
+          medium businesses. We guide our clients toward the best creative
+          direction, creating bold, considered design that helps brands walk
+          tall and go places.
         </p>
         <p>
-          Our passion is grounded in experience, continuous learning, and a deep respect for craftsmanship—allowing exploration from fear, love for what we do, and trust in trust.
+          Our passion is grounded in experience, continuous learning, and a deep
+          respect for craftsmanship—drawing inspiration from both the greats of
+          the past and the innovators shaping design today.
         </p>
       </div>
     </section>

@@ -27,7 +27,7 @@ const LogoDesignSection = () => {
         <div className="faq-item">
           <h3>WHAT'S INCLUDED IN THE STYLE GUIDE?</h3>
           <p>
-            Every brand needs a style guide print ready. On our logo-only packages a PDF that contains colour formats and typography. On our full brand identity projects include the above plus critical elements such as usage, patterns, icons, all contained in a print ready PDF. Files are delivered via We transfer as a zipped Brand folder, organized by file type.
+            Our style guides are presented print ready. On our logo only packages a PDF that contains colour formats and typography. On our full brand identity projects include the above plus critical elements such as usage, patterns, icons, all contained in a print ready PDF. Files are delivered via WeTransfer as a zipped brand folder, organized by file type.
           </p>
         </div>
       </div>

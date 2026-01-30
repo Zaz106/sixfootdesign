@@ -13,23 +13,23 @@ const PricingSection = () => {
             We offer fixed-price packages, with either:
           </p>
           <ul>
-            <li>100% upfront payment for a discount</li>
-            <li>50% upfront, 25% at milestones, 25% before final delivery</li>
+            <li>50% upfront, 50% on completion, or</li>
+            <li>50% upfront, 25% at a milestone, 25% before final delivery</li>
           </ul>
-          <p>For urgent projects, we charge hourly set-fee rates.</p>
+          <p>FFor urgent projects, we charge hourly ad-hoc rates.</p>
         </div>
 
         <div className="faq-item">
           <h3>DO YOU OFFER RETAINERS?</h3>
           <p>
-            Yes. We offer retainers for micro/small business and one for larger businesses committed to a brand partnership.
+            Yes we do, we offer two retainers, one for micro/small business and one for larger businesses both aimed at ongoing brand partnership.
           </p>
         </div>
 
         <div className="faq-item">
           <h3>DO YOU HAVE A PRICE LIST?</h3>
           <p>
-            We fixed price list with well-packages—since every project is unique. We provide custom quotes based on your needs.
+           No fixed price list—aside from logo and web packages—since every project is unique. We provide custom quotes based on your needs.
           </p>
         </div>
       </div>

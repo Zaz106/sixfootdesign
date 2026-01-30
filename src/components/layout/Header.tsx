@@ -93,7 +93,7 @@ const Header = () => {
         <Link href="/" onClick={closeMenu}>HOME</Link>
         <Link href="/pages/about" onClick={closeMenu}>ABOUT US</Link>
         <Link href="/pages/projects" onClick={closeMenu}>PROJECTS</Link>
-        <Link href="/pages/news" onClick={closeMenu}>NEWS/BLOG</Link>
+        <Link href="https://sixfootdesignco.blogspot.com/" onClick={closeMenu}>NEWS/BLOG</Link>
         <Link href="/pages/faq" onClick={closeMenu}>FAQ</Link>
         <Link href="/pages/contact" onClick={closeMenu}>CONTACT US</Link>
       </nav>
