@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import './MeetMoSection.css';
 
 const MeetMoSection = () => {
@@ -10,7 +11,12 @@ const MeetMoSection = () => {
           Mo, our mascot, is our brand in character form. He’s more of a Danny DeVito than an Arnold Schwarzenegger—small in stature but with a giant heart and an eye for potential. He embodies our mission: to see the hidden greatness in every brand,  helping businesses grow and thrive through creativity, connection, and  bold design.
         </p>
         <div className="mo-character">
-          <img src="/Mo for social section.png" alt="Mo Character" />
+          <Image 
+            src="/Mo for social section.png" 
+            alt="Mo Character" 
+            width={400} 
+            height={400} 
+          />
         </div>
       </div>
     </section>

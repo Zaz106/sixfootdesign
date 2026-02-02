@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import './Header.css';
 
 const Header = () => {
@@ -57,7 +58,13 @@ const Header = () => {
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="logo">
-         <img src="/Sixfoot Design logo.svg" alt="Six Foot Design Co" /> 
+         <Image 
+           src="/Sixfoot Design logo.svg" 
+           alt="Six Foot Design Co" 
+           width={150} 
+           height={50} 
+           priority 
+         /> 
       </div>
       
       {/* Desktop Navigation */}

@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
   .section-heading {
-    font-size: var(--text-h1);
+    margin-bottom: 1.5rem;
   }
 
   .process-workflow-content {

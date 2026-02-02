@@ -41,12 +41,11 @@
   color: var(--color-primary);
   font-family: var(--font-heading);
   font-weight: 700;
-
 }
 
 @media (max-width: 768px) {
   .what-we-value h2 {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
   }
 
   .value-content {

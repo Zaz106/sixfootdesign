@@ -2,11 +2,19 @@ import React from 'react';
 import './HeroSection.css';
 import SplitText from '../../ui/SplitText';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
     <section className="hero">
-      <img src="/City on a hill - hero bg.png" alt="Hero Background" className="hero-background" /> 
+      <Image 
+        src="/City on a hill - hero bg.png" 
+        alt="Hero Background" 
+        className="hero-background" 
+        fill 
+        priority 
+        sizes="100vw"
+      /> 
       
       <div className="hero-content">
         <SplitText

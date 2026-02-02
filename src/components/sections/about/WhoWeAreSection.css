@@ -7,7 +7,7 @@
 
 .who-we-are-content {
    width: 85%; /* Match project cards width */
-   margin: 0 auto 2rem;
+  margin: 0 auto;
    text-align: left;
 }
 
@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .who-we-are h2 {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
   }
 
   .who-we-are-content {

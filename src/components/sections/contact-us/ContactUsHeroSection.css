@@ -2,16 +2,16 @@
   width: 100%;
   margin-top: var(--header-height);
   background-color: var(--color-background);
-  padding: 5rem 0.25rem 1rem;
+  padding: var(--spacing-padding);
 }
 
 .contact-us-hero-content {
-  max-width: 1200px;
+  max-width: var(--spacing-container);
   width: 90%;
   margin: 0 auto;
-  padding: 0.5rem 0 3rem;
   text-align: center;
   color: var(--color-text-main);
+  margin-bottom: -2rem;
 }
 
 .contact-us-hero-label {
@@ -30,16 +30,17 @@
 .contact-us-hero-text {
   font-size: var(--text-body);
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .contact-us-hero-title {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
   }
 
   .contact-us-hero-content {
-    padding: 1rem 0 1rem;
+    padding: 1rem 0;
+    margin-bottom: -3rem;
   }
 }

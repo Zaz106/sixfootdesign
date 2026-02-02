@@ -1,5 +1,6 @@
 import React from 'react';
 import TextType from '../../ui/TypeWriter';
+import Image from 'next/image';
 import './AboutHeroSection.css';
 
 const AboutHeroSection = () => {
@@ -20,7 +21,13 @@ const AboutHeroSection = () => {
         </p>
       </div>
       <div className="about-hero-image">
-        <img src="/About Us - Hero Image.png" alt="Six Foot Design Studio" />
+        <Image 
+          src="/About Us - Hero Image.png" 
+          alt="Six Foot Design Studio" 
+          width={600} 
+          height={600} 
+          priority 
+        />
       </div>
     </section>
   );

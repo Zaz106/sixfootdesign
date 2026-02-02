@@ -47,7 +47,7 @@
 .hero-title {
   font-size: var(--text-display);
   color: #fff;
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
   line-height: 0.9;
   display: block;

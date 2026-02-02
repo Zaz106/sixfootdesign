@@ -1,13 +1,21 @@
 import React from 'react';
 import './SocialSection.css';
 import Link from 'next/link';
+import Image from 'next/image';
+
 // Note: You'll need to import actual icons, using text as placeholder for now or assuming svg/img
 const SocialSection = () => {
     return (
         <section className="social">
             <h2 className="social-title">LETS GET SOCIAL</h2>
             <div className="social-container">
-                <img src="/Mo for social section.png" alt="Social Monster" className="social-monster" />
+                <Image 
+                    src="/Mo for social section.png" 
+                    alt="Social Monster" 
+                    className="social-monster" 
+                    width={400} 
+                    height={400} 
+                />
                 
                 <div className="social-links">
                     <Link href="https://www.instagram.com/sixfootdesignco/" className="social-icon">

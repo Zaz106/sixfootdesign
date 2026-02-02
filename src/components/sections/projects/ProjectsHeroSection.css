@@ -2,16 +2,16 @@
   width: 100%;
   margin-top: var(--header-height);
   background-color: var(--color-background);
-  padding: 5rem 0.25rem 1rem;
+  padding: var(--spacing-padding);
 }
 
 .projects-hero-content {
-  max-width: 1200px;
+  max-width: var(--spacing-container);
   width: 90%;
   margin: 0 auto;
-  padding: 0.5rem 0 3rem;
   text-align: center;
   color: var(--color-text-main);
+  margin-bottom: -2rem;
 }
 
 .projects-hero-label {
@@ -30,16 +30,17 @@
 .projects-hero-text {
   font-size: var(--text-body);
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .projects-hero-title {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
   }
 
   .projects-hero-content {
-    padding: 3rem 0 2rem;
+    padding: 1rem 0;
+    margin-bottom: -3rem;
   }
 }

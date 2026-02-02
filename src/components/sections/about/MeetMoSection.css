@@ -39,7 +39,7 @@
 
 @media (max-width: 768px) {
   .meet-mo h2 {
-    font-size: var(--text-h2);
+    margin-bottom: 1rem;
   }
   
   .mo-character img {

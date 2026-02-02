@@ -6,10 +6,9 @@
 }
 
 .about-hero-content {
-  max-width: var(--spacing-contianer) ;
+  max-width: var(--spacing-container);
   width: 90%;
   margin: 0 auto;
-  padding: 0.5rem 0 3rem;
   text-align: center;
   color: var(--color-text-main);
 }
@@ -32,7 +31,7 @@
   font-size: var(--text-body);
   line-height: 1.8;
   max-width: 900px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
 }
 
 .about-hero-image {
@@ -51,10 +50,14 @@
 
 @media (max-width: 768px) {
   .about-hero-title {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
+  }
+
+  .about-hero-text {
+    margin-bottom: 1rem;
   }
 
   .about-hero-content {
-    padding: 1rem 0 1rem;
+    padding: 1rem 0;
   }
 }

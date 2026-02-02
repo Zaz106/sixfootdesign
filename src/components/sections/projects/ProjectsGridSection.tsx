@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import "./ProjectsGridSection.css";
 
 const ProjectsGridSection = () => {
@@ -96,7 +98,13 @@ const ProjectsGridSection = () => {
           const card = (
             <div className={`project-card project-card--${project.color}`}>
               <div className="project-card-image">
-                <img src={project.image} alt={project.name} />
+                <Image 
+                  src={project.image} 
+                  alt={project.name} 
+                  width={500} 
+                  height={500} 
+                  className="project-grid-img"
+                />
               </div>
               <div className="project-card-overlay">
                 <div className="project-card-content">

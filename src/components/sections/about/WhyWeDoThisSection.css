@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .why-we-do-this h2 {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
   }
 
   .why-content {

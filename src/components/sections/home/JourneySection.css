@@ -13,7 +13,7 @@
 }
 
 .journey-content {
-  padding: 8rem 0.75rem 4rem;
+  padding: var(--spacing-padding);
   max-width: var(--spacing-container);
   margin: 0 auto;
 }
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 768px) {
-  .journey-content {
-    padding: 3rem 0.5rem 3rem;
+  .journey h2 {
+    margin-bottom: 1rem;
   }
 }

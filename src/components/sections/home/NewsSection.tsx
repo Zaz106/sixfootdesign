@@ -1,6 +1,7 @@
 import React from 'react';
 import './NewsSection.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NewsSection = () => {
   return (
@@ -10,13 +11,13 @@ const NewsSection = () => {
       </div>
       <div className="news-grid">
         <div className="news-card">
-          <img src="/Blog image 1.png" alt="Blog 1" className="card-bg" />
+          <Image src="/Blog image 1.png" alt="Blog 1" className="card-bg" width={400} height={300} />
         </div>
         <div className="news-card">
-          <img src="/Blog image 2.png" alt="Blog 2" className="card-bg" />
+          <Image src="/Blog image 2.png" alt="Blog 2" className="card-bg" width={400} height={300} />
         </div>
         <div className="news-card">
-          <img src="/Blog image 3.png" alt="Blog 3" className="card-bg" />
+          <Image src="/Blog image 3.png" alt="Blog 3" className="card-bg" width={400} height={300} />
         </div>
       </div>
       <Link href="https://sixfootdesignco.blogspot.com/" target="_blank" rel="noopener noreferrer" className="btn news-btn">READ MORE</Link>

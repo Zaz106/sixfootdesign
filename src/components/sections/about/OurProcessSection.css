@@ -39,7 +39,7 @@
 
 @media (max-width: 768px) {
   .our-process h2 {
-    font-size: var(--text-h1);
+    margin-bottom: 1.5rem;
   }
 
   .process-content {

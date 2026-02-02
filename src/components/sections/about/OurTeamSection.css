@@ -70,7 +70,11 @@
 
 @media (max-width: 768px) {
   .our-team h2 {
-    font-size: var(--text-h1);
+    margin-bottom: 1rem;
+  }
+
+  .our-team-intro {
+    margin-bottom: 2rem;
   }
 
   .our-team-content {

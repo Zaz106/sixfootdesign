@@ -36,3 +36,9 @@
 .about-btn {
     background-color: var(--color-secondary);
 }
+
+@media (max-width: 768px) {
+  .about h2{
+    margin-bottom: 1rem;
+  }
+}

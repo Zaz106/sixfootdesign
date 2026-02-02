@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./PortfolioProjectSection.css";
 
 type PortfolioProject = {
@@ -37,7 +38,13 @@ const PortfolioProjectSection = ({ project, showTitle = true, isLastProject = fa
       <div className="portfolio-project-content">
         {showTitle && <h2 className="portfolio-project-title">{project.title}</h2>}
         <div className="portfolio-project-hero">
-          <img src={project.heroImage} alt={project.title} />
+          <Image 
+            src={project.heroImage} 
+            alt={project.title} 
+            width={1200} 
+            height={800} 
+            priority={project.id === 'angi-cleans'} // Assuming first project might be LCP
+          />
         </div>
 
         <div className="portfolio-project-copy">
