@@ -5,11 +5,15 @@ import Link from 'next/link';
 const JourneySection = () => {
   return (
     <section className="journey">
-      <img
-        src="/Rocketship - bg.png"
-        alt="Rocket Launch"
+      <video
+        autoPlay 
+        muted 
+        loop 
+        playsInline 
         className="journey-graphic"
-      />
+      >
+      <source src="/Rocket_Ship_Takeoff_Video_Generation.mp4" type="video/mp4" />
+      </video>
 
       <div className="journey-content">
         <h2>A NEW CHAPTER TO OUR JOURNEY</h2>
