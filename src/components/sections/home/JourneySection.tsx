@@ -1,18 +1,15 @@
 import React from "react";
 import "./JourneySection.css";
-import Link from 'next/link';
+import Link from "next/link";
 
 const JourneySection = () => {
   return (
     <section className="journey">
-      <video
-        autoPlay 
-        muted 
-        loop 
-        playsInline 
-        className="journey-graphic"
-      >
-      <source src="/Rocket_Ship_Takeoff_Video_Generation.mp4" type="video/mp4" />
+      <video autoPlay muted loop playsInline className="journey-graphic">
+        <source
+          src="/Rocket_Ship_Takeoff_Video_Generation.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div className="journey-content">
@@ -31,7 +28,9 @@ const JourneySection = () => {
             purposeful, strategic work.
           </p>
         </div>
-        <Link href="/pages/projects" className="btn journey-btn">VIEW OUR PROJECTS</Link>
+        <Link href="/pages/projects" className="btn journey-btn">
+          VIEW OUR PROJECTS
+        </Link>
       </div>
     </section>
   );

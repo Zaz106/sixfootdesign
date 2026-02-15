@@ -91,7 +91,7 @@
   font-size: var(--text-small);
   line-height: 1.5;
   transition: color 0.2s ease;
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contact-social-links a:hover {
@@ -133,7 +133,7 @@
   font-size: var(--text-body);
   font-family: var(--font-poppins);
   transition: border-color 0.2s ease;
-  background-color: #fafafa;
+  background-color: #fdfdfd;
 }
 
 .contact-form input::placeholder,
@@ -173,7 +173,7 @@
   padding: 0.75rem 2rem;
   border: 1px solid #e5e5e5;
   border-radius: 30px;
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   font-family: var(--font-poppins);
   font-size: var(--text-body);
   color: var(--color-text-main);

@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import './Header.css';
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import "./Header.css";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,19 +14,19 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false); // Scrolling down
         setIsMobileMenuOpen(false); // Close mobile menu on scroll down
       } else {
         setIsVisible(true); // Scrolling up
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   // Handle click outside to close menu
@@ -34,16 +34,21 @@ const Header = () => {
     const handleClickOutside = (event: MouseEvent) => {
       // Check if click is outside nav and outside toggle button
       const target = event.target as Element;
-      const isToggle = target.closest('.mobile-toggle-wrapper');
-      
-      if (isMobileMenuOpen && mobileNavRef.current && !mobileNavRef.current.contains(target as Node) && !isToggle) {
+      const isToggle = target.closest(".mobile-toggle-wrapper");
+
+      if (
+        isMobileMenuOpen &&
+        mobileNavRef.current &&
+        !mobileNavRef.current.contains(target as Node) &&
+        !isToggle
+      ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
 
@@ -56,17 +61,17 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
+    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="logo">
-         <Image 
-           src="/Sixfoot Design logo.svg" 
-           alt="Six Foot Design Co" 
-           width={150} 
-           height={50} 
-           priority 
-         /> 
+        <Image
+          src="/Sixfoot Design logo.svg"
+          alt="Six Foot Design Co"
+          width={150}
+          height={50}
+          priority
+        />
       </div>
-      
+
       {/* Desktop Navigation */}
       <nav className="nav desktop-nav">
         <Link href="/">HOME</Link>
@@ -74,14 +79,15 @@ const Header = () => {
         <Link href="/pages/projects">PROJECTS</Link>
         <Link href="https://sixfootdesignco.blogspot.com/">NEWS/BLOG</Link>
         <Link href="/pages/faq">FAQ</Link>
+        <Link href="/pages/shop">SHOP</Link>
         <Link href="/pages/contact">CONTACT US</Link>
       </nav>
 
       {/* Mobile Toggle */}
       <div className="mobile-toggle-wrapper">
-        <input 
-          id="checkbox" 
-          type="checkbox" 
+        <input
+          id="checkbox"
+          type="checkbox"
           checked={isMobileMenuOpen}
           onChange={toggleMenu}
         />
@@ -93,16 +99,31 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <nav 
+      <nav
         ref={mobileNavRef}
-        className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}
+        className={`mobile-nav ${isMobileMenuOpen ? "open" : ""}`}
       >
-        <Link href="/" onClick={closeMenu}>HOME</Link>
-        <Link href="/pages/about" onClick={closeMenu}>ABOUT US</Link>
-        <Link href="/pages/projects" onClick={closeMenu}>PROJECTS</Link>
-        <Link href="https://sixfootdesignco.blogspot.com/" onClick={closeMenu}>NEWS/BLOG</Link>
-        <Link href="/pages/faq" onClick={closeMenu}>FAQ</Link>
-        <Link href="/pages/contact" onClick={closeMenu}>CONTACT US</Link>
+        <Link href="/" onClick={closeMenu}>
+          HOME
+        </Link>
+        <Link href="/pages/about" onClick={closeMenu}>
+          ABOUT US
+        </Link>
+        <Link href="/pages/projects" onClick={closeMenu}>
+          PROJECTS
+        </Link>
+        <Link href="https://sixfootdesignco.blogspot.com/" onClick={closeMenu}>
+          NEWS/BLOG
+        </Link>
+        <Link href="/pages/faq" onClick={closeMenu}>
+          FAQ
+        </Link>
+        <Link href="/pages/shop" onClick={closeMenu}>
+          SHOP
+        </Link>
+        <Link href="/pages/contact" onClick={closeMenu}>
+          CONTACT US
+        </Link>
       </nav>
     </header>
   );
