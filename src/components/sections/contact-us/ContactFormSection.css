@@ -193,8 +193,19 @@
 }
 
 .contact-form textarea {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   resize: vertical;
+}
+
+.message-field-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.char-counter {
+  text-align: right;
+  font-size: 0.78rem;
+  color: #aaa;
+  margin: 4px 2px 0;
 }
 
 .submit-btn {
@@ -420,5 +431,148 @@
     padding: 0.875rem 1.5rem;
     font-size: 1.1rem;
     border-radius: 8px;
+  }
+}
+
+/* ─── Loading state ──────────────────────────────── */
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact-form input:disabled,
+.contact-form textarea:disabled,
+.enquiry-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─── Popup Overlay ──────────────────────────────── */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+  animation: popupFadeIn 0.2s ease;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ─── Popup Modal ────────────────────────────────── */
+.popup-modal {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2.5rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  animation: popupSlideUp 0.25s ease;
+}
+
+@keyframes popupSlideUp {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ─── Icon Circle ────────────────────────────────── */
+.popup-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.popup-success .popup-icon {
+  background-color: #87b18f;
+}
+
+.popup-error .popup-icon {
+  background-color: #e05252;
+}
+
+.popup-rate-limited .popup-icon {
+  background-color: #e8943a;
+}
+
+.popup-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+
+/* ─── Text ───────────────────────────────────────── */
+.popup-title {
+  font-family: var(--font-bebas-neue), "Arial Black", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.popup-message {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+/* ─── Close Button ───────────────────────────────── */
+.popup-close-btn {
+  display: inline-block;
+  font-family: var(--font-bebas-neue), "Arial Black", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 13px;
+  padding: 0.7rem 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.popup-close-btn:hover {
+  background-color: #769c7e;
+}
+
+/* Mobile popup */
+@media (max-width: 480px) {
+  .popup-modal {
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .popup-title {
+    font-size: 1.6rem;
+  }
+
+  .popup-message {
+    font-size: 0.875rem;
   }
 }
