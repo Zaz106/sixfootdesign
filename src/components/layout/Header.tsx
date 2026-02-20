@@ -64,7 +64,7 @@ const Header = () => {
     <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="logo">
         <Image
-          src="/Sixfoot Design logo.svg"
+          src="/six-foot-logo-dark.svg"
           alt="Six Foot Design Co"
           width={150}
           height={50}
