@@ -39,7 +39,7 @@ const NewsSection = () => {
         </div>
       </div>
       <Link
-        href="https://sixfootdesignco.blogspot.com/"
+        href="https://medium.com/@jason.huisman75"
         target="_blank"
         rel="noopener noreferrer"
         className="btn news-btn"

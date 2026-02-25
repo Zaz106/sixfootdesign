@@ -77,7 +77,7 @@ const Header = () => {
         <Link href="/">HOME</Link>
         <Link href="/pages/about">ABOUT US</Link>
         <Link href="/pages/projects">PROJECTS</Link>
-        <Link href="https://sixfootdesignco.blogspot.com/">NEWS/BLOG</Link>
+        <Link href="https://medium.com/@jason.huisman75">NEWS/BLOG</Link>
         <Link href="/pages/faq">FAQ</Link>
         <Link href="/pages/shop">SHOP</Link>
         <Link href="/pages/contact">CONTACT US</Link>
