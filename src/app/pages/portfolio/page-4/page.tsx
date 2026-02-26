@@ -36,8 +36,9 @@ const PortfolioPage4 = () => {
       approach:
         "Just as the business is built on three key service pillars — Renewable Energy Solutions, Carbon Footprint Auditing, and Energy Efficiency & Management — we took a strategic approach to the logo. Rather than trying to represent each service literally, we focused on the three core areas of renewables to clearly show that the business offers a balanced, holistic solution. The use of green and blue reinforces the eco-friendly nature of the brand and ties the identity together.",
       thankYouText: "Nico Stickling for the opportunity.",
-      websiteUrl: "https://www.cityonahill.co.za/contact",
-      buttonText: "VIEW THE PROJECT",
+      websiteUrl:
+        "mailto:jason@sixfootdesignco.co.za?subject=Commission%20Enquiry",
+      buttonText: "HAVE A COMMISSION PLEASE CLICK HERE",
     },
     {
       id: "twm",
@@ -51,7 +52,7 @@ const PortfolioPage4 = () => {
       approach:
         "They work across all media platforms, with a strong focus on print. We approached the identity with the understanding that print and digital are flexible, fluid mediums that work best in partnership—each complementing the other. Proudly South African at heart, these considerations guided the creation of a logo and wordmark that are simple, adaptable, and built to work seamlessly across every application.",
       thankYouText: "Justin and Damion for opportunity.",
-      websiteUrl: "https://traditionallywired.co.za",
+      websiteUrl: "https://traditionallywiredmedia.com",
       buttonText: "VIEW THE LOGO IN ACTION",
     },
   ];

@@ -32,25 +32,37 @@ type PortfolioContentSectionProps = {
   projects: PortfolioProject[];
 };
 
-const PortfolioProjectSection = ({ project, showTitle = true, isLastProject = false }: PortfolioProjectSectionProps) => {
+const PortfolioProjectSection = ({
+  project,
+  showTitle = true,
+  isLastProject = false,
+}: PortfolioProjectSectionProps) => {
   return (
-    <section id={project.id} className="portfolio-project" style={{ '--project-accent': project.accentColor } as React.CSSProperties}>
+    <section
+      id={project.id}
+      className="portfolio-project"
+      style={{ "--project-accent": project.accentColor } as React.CSSProperties}
+    >
       <div className="portfolio-project-content">
-        {showTitle && <h2 className="portfolio-project-title">{project.title}</h2>}
+        {showTitle && (
+          <h2 className="portfolio-project-title">{project.title}</h2>
+        )}
         <div className="portfolio-project-hero">
-          <Image 
-            src={project.heroImage} 
-            alt={project.title} 
-            width={1200} 
-            height={800} 
-            priority={project.id === 'angi-cleans'} // Assuming first project might be LCP
+          <Image
+            src={project.heroImage}
+            alt={project.title}
+            width={1200}
+            height={800}
+            priority={project.id === "angi-cleans"} // Assuming first project might be LCP
           />
         </div>
 
         <div className="portfolio-project-copy">
           {project.customSection ? (
             <>
-              <h3 className="portfolio-section-label">{project.customSection.label}</h3>
+              <h3 className="portfolio-section-label">
+                {project.customSection.label}
+              </h3>
               <p>{project.customSection.content}</p>
             </>
           ) : (
@@ -66,9 +78,13 @@ const PortfolioProjectSection = ({ project, showTitle = true, isLastProject = fa
 
               {project.quoteText && (
                 <div className="portfolio-quote">
-                  <h3 className="portfolio-quote-text">"{project.quoteText}"</h3>
+                  <h3 className="portfolio-quote-text">
+                    "{project.quoteText}"
+                  </h3>
                   {project.quoteAuthor && (
-                    <h3 className="portfolio-quote-author">- {project.quoteAuthor}</h3>
+                    <h3 className="portfolio-quote-author">
+                      - {project.quoteAuthor}
+                    </h3>
                   )}
                 </div>
               )}
@@ -83,14 +99,20 @@ const PortfolioProjectSection = ({ project, showTitle = true, isLastProject = fa
               <p className="portfolio-thank-you-text">{project.thankYouText}</p>
             </>
           )}
-          <a
-            className="portfolio-project-link"
-            href={project.websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {project.buttonText}
-          </a>
+          {project.websiteUrl.toLowerCase().startsWith("mailto:") ? (
+            <a className="portfolio-project-link" href={project.websiteUrl}>
+              {project.buttonText}
+            </a>
+          ) : (
+            <a
+              className="portfolio-project-link"
+              href={project.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.buttonText}
+            </a>
+          )}
         </div>
       </div>
       {!isLastProject && <div className="portfolio-divider" />}
@@ -98,20 +120,27 @@ const PortfolioProjectSection = ({ project, showTitle = true, isLastProject = fa
   );
 };
 
-const PortfolioContentSection = ({ heroTitle, projects }: PortfolioContentSectionProps) => {
-  const heroAccentColor = projects[0]?.accentColor || "var(--color-secondary-alt)";
+const PortfolioContentSection = ({
+  heroTitle,
+  projects,
+}: PortfolioContentSectionProps) => {
+  const heroAccentColor =
+    projects[0]?.accentColor || "var(--color-secondary-alt)";
   return (
     <>
-      <section className="portfolio-hero" style={{ '--project-accent': heroAccentColor } as React.CSSProperties}>
+      <section
+        className="portfolio-hero"
+        style={{ "--project-accent": heroAccentColor } as React.CSSProperties}
+      >
         <div className="portfolio-hero-content">
           <h2 className="portfolio-hero-label">PROJECTS</h2>
         </div>
       </section>
 
       {projects.map((project, index) => (
-        <PortfolioProjectSection 
-          key={project.id} 
-          project={project} 
+        <PortfolioProjectSection
+          key={project.id}
+          project={project}
           isLastProject={index === projects.length - 1}
         />
       ))}

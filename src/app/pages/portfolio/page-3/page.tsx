@@ -21,7 +21,7 @@ const PortfolioPage3 = () => {
         "Six Foot Design can't thank them enough from concept to design brilliant, really happy with the logo and branding work done.",
       quoteAuthor: "EARL",
       thankYouText: "Earl for the ongoing partnership and Josh for the Dev.",
-      websiteUrl: "https://redseal.co.za",
+      websiteUrl: "https://redsealplumbing.co.za",
       buttonText: "VIEW THE PROJECT",
     },
     {
@@ -36,7 +36,7 @@ const PortfolioPage3 = () => {
       approach:
         "Just as the business is built on three key service pillars — Renewable Energy Solutions, Carbon Footprint Auditing, and Energy Efficiency & Management — we took a strategic approach to the logo. Rather than trying to represent each service literally, we focused on the three core areas of renewables to clearly show that the business offers a balanced, holistic solution. The use of green and blue reinforces the eco-friendly nature of the brand and ties the identity together.",
       thankYouText: "Hamanth for trusting us with your brand.",
-      websiteUrl: "https://greenera.co.za",
+      websiteUrl: "https://greeneraenergy.co.za",
       buttonText: "VIEW THE PROJECT",
     },
     {
@@ -51,7 +51,7 @@ const PortfolioPage3 = () => {
       approach:
         "We stuck closely to brand, understanding that those clients looking for air conditioning suppliers are looking for qualified individuals that can work with multiple brands. This formed the foundation to our strategy of including relevant and helpful information only, along with references to increase credibly.",
       thankYouText: "Earl for the ongoing partnership.",
-      websiteUrl: "https://garicon.co.za",
+      websiteUrl: "https://gariconairconditioning.co.za",
       buttonText: "VIEW THE PROJECT",
     },
   ];

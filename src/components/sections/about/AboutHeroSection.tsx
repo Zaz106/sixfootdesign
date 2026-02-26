@@ -19,16 +19,16 @@ const AboutHeroSection = () => {
         <p className="about-hero-text">
           We are an experienced home based studio with big ambitions and
           passion, powered by late nights, endless ideas, and way too much
-          coffee, dedicated to crafting unique digital experiences that make a
-          real impact.
+          coffee, dedicated to crafting unique print and digital experiences
+          that make a real impact.
         </p>
       </div>
       <div className="about-hero-image">
         <Image
           src="/About Us - Hero Image.webp"
           alt="Six Foot Design Studio"
-          width={600}
-          height={600}
+          width={1600}
+          height={1600}
           priority
         />
       </div>

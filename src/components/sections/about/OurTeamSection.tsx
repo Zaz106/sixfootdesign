@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./OurTeamSection.css";
 
 const OurTeamSection = () => {
@@ -15,25 +16,41 @@ const OurTeamSection = () => {
         <div className="team-grid">
           <div className="team-member">
             <div className="team-member-image">
-              {/* Placeholder for Jason's image */}
-              <h3>JASON</h3>
-              <p className="team-role">Owner/ Creative Director</p>
+              <Image
+                src="/Jason-Image.jpeg"
+                alt="Jason - Owner/ Creative Director"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="member-info">
+                <h3>JASON</h3>
+                <p className="team-role">Owner/ Creative Director</p>
+              </div>
             </div>
           </div>
 
           <div className="team-member">
             <div className="team-member-image">
-              {/* Placeholder for Laurel's image */}
-              <h3>LAUREL</h3>
-              <p className="team-role">Studio Manager</p>
+              <Image
+                src="/Laurel-Image.jpeg"
+                alt="Laurel - Studio Manager"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="member-info">
+                <h3>LAUREL</h3>
+                <p className="team-role">Studio Manager</p>
+              </div>
             </div>
           </div>
 
           <div className="team-member">
             <div className="team-member-image">
               {/* Placeholder for Josh's image */}
-              <h3>JOSH</h3>
-              <p className="team-role">Developer</p>
+              <div className="member-info">
+                <h3>JOSH</h3>
+                <p className="team-role">Developer</p>
+              </div>
             </div>
           </div>
         </div>

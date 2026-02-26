@@ -21,7 +21,7 @@ const PortfolioPage2 = () => {
         "In short BRILLIANT INVENTIVE AND PROFESSIONAL I highly recommend Jason and Six Foot Design Co for your design projects he took me from a loOse  brand to a cohesive brand with a online presence in a short space of time.",
       quoteAuthor: "MARK",
       thankYouText: "Mark and Paula Hibberd for the ongoing partnership.",
-      websiteUrl: "https://plasticourt.co.za",
+      websiteUrl: "https://plasticourt.com",
       buttonText: "VIEW THE PROJECT",
     },
     {
@@ -46,9 +46,11 @@ const PortfolioPage2 = () => {
       accentColor: "var(--color-secondary)",
       customSection: {
         label: "THE INSPIRATION BEHIND THE POSTER",
-        content: "In between projects, we often work on personal pieces to explore new techniques and keep the creative juices flowing. The inspiration behind this poster series (with many more to follow) comes from our faith, which forms the foundation of our purpose and is something we celebrate in every way we can.",
+        content:
+          "In between projects, we often work on personal pieces to explore new techniques and keep the creative juices flowing. The inspiration behind this poster series (with many more to follow) comes from our faith, which forms the foundation of our purpose and is something we celebrate in every way we can.",
       },
-      websiteUrl: "https://www.cityonahill.co.za/contact",
+      websiteUrl:
+        "mailto:jason@sixfootdesignco.co.za?subject=Commission%20Enquiry",
       buttonText: "HAVE A COMMISSION PLEASE CLICK HERE",
     },
   ];
