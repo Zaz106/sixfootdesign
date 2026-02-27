@@ -151,10 +151,8 @@ const ContactFormSection = () => {
               We Have Answers
             </h2>
             <p className="contact-info-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex
+              You’ve got questions. We’ve got the answers. Shoot us an email and
+              let’s start the conversation.
             </p>
 
             <div className="contact-details">
