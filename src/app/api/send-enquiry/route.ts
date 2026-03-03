@@ -42,8 +42,8 @@ function pruneRateLimitMap() {
 
 // ─── Sanitization ─────────────────────────────────────────────────────────────
 const FIELD_MAX_LENGTHS: Record<string, number> = {
-  firstName: 60,
-  lastName: 60,
+  firstName: 30,
+  lastName: 30,
   province: 80,
   phone: 30,
   email: 254, // RFC 5321 max
@@ -64,10 +64,28 @@ function sanitizeString(value: unknown): string {
     .replace(/[<>]/g, "");   // strip any stray angle brackets
 }
 
+function validateName(name: string): string | null {
+  // Must contain letters
+  if (!/[a-zA-Z]/.test(name)) return "Name must contain letters.";
+  // No numbers
+  if (/\d/.test(name)) return "Name cannot contain numbers.";
+  // Must contain vowels
+  if (!/[aeiouyAEIOUY]/.test(name)) return "Name must contain at least one vowel (a, e, i, o, u, y).";
+  // No more than 3 consecutive uppercase letters
+  if (/[A-Z]{4,}/.test(name)) return "Name contains too many consecutive uppercase letters.";
+  
+  return null;
+}
+
 function sanitizeFields(raw: Record<string, unknown>): {
   data: Record<string, string> | null;
   error: string | null;
 } {
+  // Honeypot check
+  if (raw.hp_field) {
+    return { data: null, error: "Bot detected (honeypot)." };
+  }
+
   const fields = ["firstName", "lastName", "province", "phone", "email", "enquiryType", "message"];
   const sanitized: Record<string, string> = {};
 
@@ -75,8 +93,14 @@ function sanitizeFields(raw: Record<string, unknown>): {
     const cleaned = sanitizeString(raw[field]);
 
     // Required fields
-    if (!cleaned && ["firstName", "email", "message"].includes(field)) {
+    if (!cleaned && ["firstName", "email", "message", "enquiryType"].includes(field)) {
       return { data: null, error: `Missing required field: ${field}` };
+    }
+
+    // Name validation
+    if (["firstName", "lastName"].includes(field) && cleaned) {
+      const nameError = validateName(cleaned);
+      if (nameError) return { data: null, error: nameError };
     }
 
     // Length cap
@@ -129,12 +153,25 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // ── Parse & sanitize ──
+  // ── Origin check ──
+  const origin = req.headers.get("origin") || req.headers.get("referer");
+  const host = req.headers.get("host");
+
+  if (!origin || (host && !origin.includes(host))) {
+     return NextResponse.json({ error: "Unauthorized origin." }, { status: 403 });
+  }
+
   let raw: Record<string, unknown>;
   try {
     raw = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+  }
+
+  // ── Time-based detection ──
+  const { loadTimestamp } = raw as { loadTimestamp?: number };
+  if (!loadTimestamp || Date.now() - loadTimestamp < 3000) {
+    return NextResponse.json({ error: "Submission too fast. Please wait a few seconds." }, { status: 400 });
   }
 
   const { data, error } = sanitizeFields(raw);

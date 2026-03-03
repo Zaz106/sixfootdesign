@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ContactFormSection.css";
 import Link from "next/link";
 
@@ -87,7 +87,14 @@ const ContactFormSection = () => {
     email: "",
     enquiryType: "",
     message: "",
+    hp_field: "", // Honeypot field
   });
+
+  const [loadTimestamp, setLoadTimestamp] = useState<number>(0);
+
+  useEffect(() => {
+    setLoadTimestamp(Date.now());
+  }, []);
 
   const [isLoading, setIsLoading] = useState(false);
   const [popup, setPopup] = useState<PopupState>(null);
@@ -111,7 +118,7 @@ const ContactFormSection = () => {
       const res = await fetch("/api/send-enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, loadTimestamp }),
       });
 
       if (res.ok) {
@@ -124,6 +131,7 @@ const ContactFormSection = () => {
           email: "",
           enquiryType: "",
           message: "",
+          hp_field: "",
         });
       } else if (res.status === 429) {
         setPopup("rate-limited");
@@ -309,7 +317,23 @@ const ContactFormSection = () => {
                 <p className="char-counter">{formData.message.length} / 2000</p>
               </div>
 
-              <button type="submit" className="submit-btn" disabled={isLoading}>
+              {/* Honeypot field - hidden from users */}
+              <div style={{ display: "none" }} aria-hidden="true">
+                <input
+                  type="text"
+                  name="hp_field"
+                  value={formData.hp_field}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="submit-btn"
+                disabled={isLoading || !formData.enquiryType}
+              >
                 {isLoading ? "Sending…" : "Send Message"}
               </button>
             </form>
