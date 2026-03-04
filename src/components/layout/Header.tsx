@@ -112,7 +112,7 @@ const Header = () => {
         <Link href="/pages/projects" onClick={closeMenu}>
           PROJECTS
         </Link>
-        <Link href="https://sixfootdesignco.blogspot.com/" onClick={closeMenu}>
+        <Link href="https://medium.com/@jason.huisman75" onClick={closeMenu}>
           NEWS/BLOG
         </Link>
         <Link href="/pages/faq" onClick={closeMenu}>
