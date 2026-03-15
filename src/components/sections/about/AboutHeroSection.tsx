@@ -25,7 +25,7 @@ const AboutHeroSection = () => {
       </div>
       <div className="about-hero-image">
         <Image
-          src="/About Us - Hero Image.webp"
+          src="/About-Us-Hero.jpeg"
           alt="Six Foot Design Studio"
           width={1600}
           height={1600}

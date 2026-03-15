@@ -46,7 +46,12 @@ const OurTeamSection = () => {
 
           <div className="team-member">
             <div className="team-member-image">
-              {/* Placeholder for Josh's image */}
+              <Image
+                src="/Josh-Image.jpeg"
+                alt="Josh - Developer"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
               <div className="member-info">
                 <h3>JOSH</h3>
                 <p className="team-role">Developer</p>
