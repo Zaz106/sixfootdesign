@@ -8,9 +8,9 @@ const OurTeamSection = () => {
       <div className="our-team-content">
         <h2>OUR TEAM</h2>
         <p className="our-team-intro">
-          We’re a family-run business rooted in faith, hard work, and a genuine
-          passion for using our unique strengths to help brands grow and go
-          further.
+          We’re a family-run business built on faith and hard work — a team of
+          creative Jedi passionate about using our unique strengths to help
+          brands grow and go further.
         </p>
 
         <div className="team-grid">

@@ -17,9 +17,9 @@ const AboutHeroSection = () => {
           loop={false}
         />
         <p className="about-hero-text">
-          We’re a family-run business built on faith and hard work — a team of
-          creative Jedi passionate about using our unique strengths to help
-          brands grow and go further.
+          We are a experienced home based based studio with big ambitions and
+          passion, powered by late nights, endless ideas, and way too much
+          coffee.
         </p>
       </div>
       <div className="about-hero-image">
