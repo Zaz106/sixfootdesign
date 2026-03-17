@@ -1,6 +1,6 @@
 import React from "react";
 import "./ServicesSection.css";
-import Link from 'next/link';
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -72,6 +72,7 @@ const ServicesSection = () => {
               <li>HTML Mailers</li>
               <li>PowerPoint Templates</li>
               <li>Digital Catalogues for Websites</li>
+              <li>Wire-frames, UX/UI & creative strategy</li>
             </ul>
             <div className="service-price">
               <span className="price-from">FROM</span>
@@ -80,7 +81,9 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <Link href="/pages/projects" className="btn services-btn">VIEW OUR PROJECTS</Link>
+        <Link href="/pages/projects" className="btn services-btn">
+          VIEW OUR PROJECTS
+        </Link>
       </div>
     </section>
   );
