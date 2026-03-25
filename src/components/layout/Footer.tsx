@@ -7,7 +7,7 @@ const Footer = () => {
     { name: "HOME", href: "/" },
     { name: "ABOUT US", href: "/pages/about" },
     { name: "PROJECTS", href: "/pages/projects" },
-    { name: "NEWS/BLOG", href: "/pages/news" },
+    { name: "NEWS/BLOG", href: "https://medium.com/@jason.huisman75" },
     { name: "SHOP", href: "/pages/shop" },
     { name: "FAQ", href: "/pages/faq" },
     { name: "CONTACT US", href: "/pages/contact" },
