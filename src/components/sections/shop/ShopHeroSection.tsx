@@ -31,8 +31,8 @@ const ShopHeroSection = () => {
           <Image
             src="/Shop Image - Background.webp"
             alt="Shop Opening June 2026"
-            width={1200}
-            height={600}
+            width={1920}
+            height={1080}
             className="shop-hero-image"
             priority
           />

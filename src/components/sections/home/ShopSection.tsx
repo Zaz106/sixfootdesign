@@ -8,13 +8,13 @@ const ShopSection = () => {
     <section className="shop">
       <div className="section-header">
         <h2>
-          COOL THINGS TO BUY<span className="header-extension"> JUNE 2026</span>
+          COOL THINGS TO BUY<span className="header-extension"> August 2026</span>
         </h2>
       </div>
       <div className="shop-grid">
         <div className="shop-item">
           <Image
-            src="/Shop Image 1.png"
+            src="/Shop Image 1.jpeg"
             alt="Shop 1"
             width={400}
             height={400}
