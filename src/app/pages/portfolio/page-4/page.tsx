@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
+
+export const metadata: Metadata = {
+  title: "Portfolio — MJC Distributors & More",
+  description:
+    "Case studies from Six Foot Design Co — featuring the MJC Online Catalogue and other branding and web design work for South African businesses.",
+  openGraph: {
+    title: "Portfolio Page 4 | Six Foot Design Co",
+    description:
+      "Branding and design case studies featuring MJC Distributors and more.",
+    url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-4",
+  },
+};
 import SocialSection from "@/components/layout/SocialSection";
 import Footer from "@/components/layout/Footer";
 import PortfolioContentSection from "@/components/sections/portfolio/PortfolioProjectSection";

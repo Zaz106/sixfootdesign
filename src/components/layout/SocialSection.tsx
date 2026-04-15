@@ -21,6 +21,9 @@ const SocialSection = () => {
           <Link
             href="https://www.instagram.com/sixfootdesignco/"
             className="social-icon"
+            aria-label="Follow Six Foot Design Co on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               viewBox="0 0 24 24"
@@ -38,6 +41,9 @@ const SocialSection = () => {
           <Link
             href="https://za.pinterest.com/sixfootdesignco/"
             className="social-icon"
+            aria-label="Follow Six Foot Design Co on Pinterest"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.965 1.406-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.091.377-.293 1.189-.332 1.348-.052.212-.171.258-.395.153-1.474-.688-2.394-2.845-2.394-4.581 0-3.73 2.709-7.155 7.82-7.155 4.106 0 7.296 2.927 7.296 6.836 0 4.079-2.571 7.361-6.141 7.361-1.199 0-2.327-.624-2.712-1.359 0 0-.593 2.257-.738 2.81-.268 1.031-1.032 2.32-1.535 3.125 1.125.347 2.316.535 3.551.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.021 11.972.021z" />
@@ -46,6 +52,9 @@ const SocialSection = () => {
           <Link
             href="https://www.linkedin.com/company/sixfootdesignco/"
             className="social-icon"
+            aria-label="Connect with Six Foot Design Co on LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -54,6 +63,9 @@ const SocialSection = () => {
           <Link
             href="https://www.behance.net/jasonhuisman1"
             className="social-icon"
+            aria-label="View Six Foot Design Co's portfolio on Behance"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

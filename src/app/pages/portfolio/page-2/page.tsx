@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
+
+export const metadata: Metadata = {
+  title: "Portfolio — Plasticourt & More",
+  description:
+    "Case studies from Six Foot Design Co — featuring brand design work for Plasticourt Surface Solutions and other South African businesses.",
+  openGraph: {
+    title: "Portfolio Page 2 | Six Foot Design Co",
+    description:
+      "Branding and design case studies featuring Plasticourt Surface Solutions and more.",
+    url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-2",
+  },
+};
 import SocialSection from "@/components/layout/SocialSection";
 import Footer from "@/components/layout/Footer";
 import PortfolioContentSection from "@/components/sections/portfolio/PortfolioProjectSection";

@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
+
+export const metadata: Metadata = {
+  title: "Portfolio — Red Seal Plumbing & More",
+  description:
+    "Case studies from Six Foot Design Co — featuring branding and web design work for Red Seal Plumbing and other South African businesses.",
+  openGraph: {
+    title: "Portfolio Page 3 | Six Foot Design Co",
+    description:
+      "Branding and web design case studies featuring Red Seal Plumbing and more.",
+    url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-3",
+  },
+};
 import SocialSection from "@/components/layout/SocialSection";
 import Footer from "@/components/layout/Footer";
 import PortfolioContentSection from "@/components/sections/portfolio/PortfolioProjectSection";

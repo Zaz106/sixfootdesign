@@ -2,7 +2,7 @@
   /* Brand Colors */
   --color-primary: #4b4f54; /* Space Grey */
   --color-accent: #ff5d00; /* Orange - Vibrant */
-  --color-secondary: #87b18f; /* Light Green */
+  --color-secondary: #719277; /* Green - darkened for WCAG AA contrast with white text */
   --color-secondary-alt: #e9d558; /* Light Yellow */
   --color-background: #ffffff; /* White */
   --color-text-main: #4b4f54; /* Grey for main text */
@@ -134,7 +134,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #769c7e;
+  background-color: #4d7454;
 }
 
 p {

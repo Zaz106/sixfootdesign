@@ -43,8 +43,9 @@ const NewsSection = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="btn news-btn"
+        aria-label="Read more articles by Jason Huisman on Medium"
       >
-        READ MORE
+        READ MORE ON MEDIUM
       </Link>
     </section>
   );

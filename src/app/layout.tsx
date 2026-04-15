@@ -19,8 +19,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Six Foot Design Co",
-  description: "Six Foot Design Co Portfolio",
+  title: {
+    template: "%s | Six Foot Design Co",
+    default: "Six Foot Design Co | Strategic Branding, Advertising & Web Design",
+  },
+  description:
+    "Six Foot Design Co is a faith-driven creative studio based in Johannesburg, South Africa, specialising in branding, advertising, illustration, and web design.",
+  metadataBase: new URL("https://www.sixfootdesignco.co.za"),
+  openGraph: {
+    siteName: "Six Foot Design Co",
+    locale: "en_ZA",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

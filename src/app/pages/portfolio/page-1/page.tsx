@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
+
+export const metadata: Metadata = {
+  title: "Portfolio — Angi's Cleaning, FunFloats & The Iron Maiden",
+  description:
+    "Case studies from Six Foot Design Co — featuring website and branding work for Angi's Cleaning Service, FunFloats, and The Iron Maiden.",
+  openGraph: {
+    title: "Portfolio Page 1 | Six Foot Design Co",
+    description:
+      "Branding and web design case studies: Angi's Cleaning Service, FunFloats, and The Iron Maiden.",
+    url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-1",
+  },
+};
 import SocialSection from "@/components/layout/SocialSection";
 import Footer from "@/components/layout/Footer";
 import PortfolioContentSection from "@/components/sections/portfolio/PortfolioProjectSection";

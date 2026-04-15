@@ -42,7 +42,7 @@
 }
 
 .footer-nav-track a:hover {
-    color: var(--color-primary); /* Slight change on specific link hover if desired */
+    color: var(--color-primary);
 }
 
 @keyframes scroll-left {
