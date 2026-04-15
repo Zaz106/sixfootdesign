@@ -18,17 +18,18 @@ const HeroSection = () => {
       
       <div className="hero-content">
         <SplitText
-          text="CITY ON A HILL"
+          text="Branding. Advertising. Illustration. Web"
           tag="h1"
           className="hero-title"
-          delay={80}
-          duration={3}
+          delay={40}
+          duration={1}
           ease="power3.out"
           splitType="chars"
           from={{ opacity: 0, y: 40 }}
           to={{ opacity: 1, y: 0 }}
         />
-        <Link href="/pages/projects" className="btn hero-btn">VIEW THE PROJECT</Link>
+        <p className="hero-subtext">Strategic, audience-first design that actually works.</p>
+        <Link href="/pages/contact" className="btn hero-btn">START YOUR PROJECT</Link>
       </div>
     </section>
   );
