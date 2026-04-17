@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <Image 
-        src="/City on a hill - hero bg.png" 
+        src="/City on a hill - hero bg.webp" 
         alt="Hero Background" 
         className="hero-background" 
         fill 
