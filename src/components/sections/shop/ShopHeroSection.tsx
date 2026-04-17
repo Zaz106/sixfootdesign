@@ -29,7 +29,7 @@ const ShopHeroSection = () => {
 
         <div className="shop-hero-image-container">
           <Image
-            src="/Shop Image - Background.webp"
+            src="/Shop Image - Background 2.jpeg"
             alt="Shop Opening June 2026"
             width={1920}
             height={1080}
