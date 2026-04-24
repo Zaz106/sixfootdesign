@@ -13,7 +13,7 @@ const NewsSection = () => {
         <div className="news-card">
           <Image
             src="/Blog image 1.webp"
-            alt="Blog 1"
+            alt="Six Foot Design Co blog — branding and web design insights"
             className="card-bg"
             width={400}
             height={300}
@@ -22,7 +22,7 @@ const NewsSection = () => {
         <div className="news-card">
           <Image
             src="/Blog image 2.webp"
-            alt="Blog 2"
+            alt="Six Foot Design Co blog — creative studio news and tips"
             className="card-bg"
             width={400}
             height={300}
@@ -31,7 +31,7 @@ const NewsSection = () => {
         <div className="news-card">
           <Image
             src="/Blog image 3.webp"
-            alt="Blog 3"
+            alt="Six Foot Design Co blog — design process and strategy"
             className="card-bg"
             width={400}
             height={300}

@@ -15,7 +15,7 @@ const ShopSection = () => {
         <div className="shop-item">
           <Image
             src="/Shop Image 1.jpeg"
-            alt="Shop 1"
+            alt="Design resources from Six Foot Design Co"
             width={400}
             height={400}
             className="shop-img"
@@ -24,7 +24,7 @@ const ShopSection = () => {
         <div className="shop-item">
           <Image
             src="/Shop Image 2.png"
-            alt="Shop 2"
+            alt="Creative templates for small businesses"
             width={400}
             height={400}
             className="shop-img"
@@ -33,7 +33,7 @@ const ShopSection = () => {
         <div className="shop-item">
           <Image
             src="/Shop Image 3.png"
-            alt="Shop 3"
+            alt="Branding assets and design products"
             width={400}
             height={400}
             className="shop-img"

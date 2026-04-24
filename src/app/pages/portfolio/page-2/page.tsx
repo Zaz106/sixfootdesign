@@ -4,12 +4,23 @@ import Header from "@/components/layout/Header";
 export const metadata: Metadata = {
   title: "Portfolio — Plasticourt & More",
   description:
-    "Case studies from Six Foot Design Co — featuring brand design work for Plasticourt Surface Solutions and other South African businesses.",
+    "Case studies from Six Foot Design Co — brand identity and web design for Plasticourt Surface Solutions and other South African businesses.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/portfolio/page-2",
+  },
   openGraph: {
     title: "Portfolio Page 2 | Six Foot Design Co",
     description:
       "Branding and design case studies featuring Plasticourt Surface Solutions and more.",
     url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-2",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Six Foot Design Co Portfolio",
+      },
+    ],
   },
 };
 import SocialSection from "@/components/layout/SocialSection";

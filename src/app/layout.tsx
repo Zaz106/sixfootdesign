@@ -21,7 +21,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     template: "%s | Six Foot Design Co",
-    default: "Six Foot Design Co | Strategic Branding, Advertising & Web Design",
+    default: "Six Foot Design Co | Branding & Web Design",
   },
   description:
     "Six Foot Design Co is a faith-driven creative studio based in Johannesburg, South Africa, specialising in branding, advertising, illustration, and web design.",
@@ -30,6 +30,22 @@ export const metadata: Metadata = {
     siteName: "Six Foot Design Co",
     locale: "en_ZA",
     type: "website",
+    images: [
+      {
+        url: "/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Six Foot Design Co",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sixfootdesignco",
+    creator: "@sixfootdesignco",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
   },
   verification: {
     google: "PLb-2LopaW-Atw562_b8D7RC9Sgib4R8W0mSnyvfPA4",

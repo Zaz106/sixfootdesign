@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "Legal",
   description:
     "Terms and conditions, privacy policy, and legal information for Six Foot Design Co.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/legal",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: "Legal | Six Foot Design Co",
     url: "https://www.sixfootdesignco.co.za/pages/legal",

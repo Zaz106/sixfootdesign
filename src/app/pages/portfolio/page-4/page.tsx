@@ -4,12 +4,23 @@ import Header from "@/components/layout/Header";
 export const metadata: Metadata = {
   title: "Portfolio — MJC Distributors & More",
   description:
-    "Case studies from Six Foot Design Co — featuring the MJC Online Catalogue and other branding and web design work for South African businesses.",
+    "Case studies from Six Foot Design Co — the MJC Online Catalogue and other branding and web design work for South African businesses.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/portfolio/page-4",
+  },
   openGraph: {
     title: "Portfolio Page 4 | Six Foot Design Co",
     description:
       "Branding and design case studies featuring MJC Distributors and more.",
     url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-4",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Six Foot Design Co Portfolio",
+      },
+    ],
   },
 };
 import SocialSection from "@/components/layout/SocialSection";

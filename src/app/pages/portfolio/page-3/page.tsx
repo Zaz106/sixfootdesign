@@ -4,12 +4,23 @@ import Header from "@/components/layout/Header";
 export const metadata: Metadata = {
   title: "Portfolio — Red Seal Plumbing & More",
   description:
-    "Case studies from Six Foot Design Co — featuring branding and web design work for Red Seal Plumbing and other South African businesses.",
+    "Case studies from Six Foot Design Co — logo design and website for Red Seal Plumbing and other South African small businesses.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/portfolio/page-3",
+  },
   openGraph: {
     title: "Portfolio Page 3 | Six Foot Design Co",
     description:
       "Branding and web design case studies featuring Red Seal Plumbing and more.",
     url: "https://www.sixfootdesignco.co.za/pages/portfolio/page-3",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Six Foot Design Co Portfolio",
+      },
+    ],
   },
 };
 import SocialSection from "@/components/layout/SocialSection";

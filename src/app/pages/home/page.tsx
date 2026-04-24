@@ -10,37 +10,60 @@ import SocialSection from "@/components/layout/SocialSection";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Strategic Branding, Advertising & Web Design",
+  title: "Branding & Web Design",
   description:
-    "Six Foot Design Co is a Johannesburg-based creative studio delivering strategic, audience-first branding, advertising, illustration, and web design for small businesses.",
+    "Six Foot Design Co — a Johannesburg creative studio specialising in branding, advertising, illustration, and web design for small businesses.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/",
+  },
   openGraph: {
-    title: "Six Foot Design Co | Strategic Branding, Advertising & Web Design",
+    title: "Six Foot Design Co | Branding & Web Design",
     description:
       "A faith-driven creative studio in Johannesburg helping small businesses grow through purposeful branding, advertising, illustration, and web design.",
     url: "https://www.sixfootdesignco.co.za/",
     type: "website",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Six Foot Design Co — Branding & Web Design",
+      },
+    ],
   },
 };
 
-const organizationSchema = {
+const businessSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
+  "@id": "https://www.sixfootdesignco.co.za/#business",
   name: "Six Foot Design Co",
   url: "https://www.sixfootdesignco.co.za",
   logo: "https://www.sixfootdesignco.co.za/six-foot-logo-dark.svg",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+27-84-741-3340",
-    contactType: "customer service",
-    email: "getintouch@sixfootdesignco.co.za",
-    areaServed: "ZA",
-    availableLanguage: "English",
-  },
+  image: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+  description:
+    "A faith-driven creative studio in Johannesburg specialising in branding, advertising, illustration, and web design for small businesses.",
+  telephone: "+27-84-741-3340",
+  email: "getintouch@sixfootdesignco.co.za",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Wilgeheuwel, Johannesburg",
+    addressLocality: "Johannesburg",
     addressRegion: "Gauteng",
     addressCountry: "ZA",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "South Africa",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Design Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Branding" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Design" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Advertising" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Illustration" } },
+    ],
   },
   sameAs: [
     "https://www.instagram.com/sixfootdesignco/",
@@ -50,8 +73,6 @@ const organizationSchema = {
     "https://www.facebook.com/SixFootDesignCo/",
     "https://medium.com/@jason.huisman75",
   ],
-  description:
-    "A faith-driven creative studio in Johannesburg specialising in branding, advertising, illustration, and web design for small businesses.",
 };
 
 export default function HomePage() {
@@ -59,7 +80,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
       />
       <main>
         <Header />

@@ -24,9 +24,9 @@ const Footer = () => {
                 {item.name}
               </Link>
             ))}
-            {/* Duplicate set for seamless loop */}
+            {/* Duplicate set for seamless loop — hidden from assistive tech */}
             {navItems.map((item, index) => (
-              <Link key={`set2-${index}`} href={item.href}>
+              <Link key={`set2-${index}`} href={item.href} aria-hidden="true" tabIndex={-1}>
                 {item.name}
               </Link>
             ))}

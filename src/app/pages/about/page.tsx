@@ -14,12 +14,23 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet the team behind Six Foot Design Co — a faith-driven, purpose-led creative studio in Johannesburg delivering honest, strategic design for small businesses.",
+    "Meet the team behind Six Foot Design Co — a faith-driven creative studio in Johannesburg delivering honest, strategic branding and web design for small businesses.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/about",
+  },
   openGraph: {
     title: "About Us | Six Foot Design Co",
     description:
       "We are a home-based studio with big passion, powered by late nights, endless ideas, and a genuine desire to see our clients thrive.",
     url: "https://www.sixfootdesignco.co.za/pages/about",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "About Six Foot Design Co",
+      },
+    ],
   },
 };
 

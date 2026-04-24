@@ -8,12 +8,23 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Start a conversation with Six Foot Design Co. Get in touch to discuss your branding, advertising, or web design project — we'd love to hear your story.",
+    "Get a quote from Six Foot Design Co in Johannesburg. Reach out to discuss your branding, advertising, or web design project — we’d love to hear your story.",
+  alternates: {
+    canonical: "https://www.sixfootdesignco.co.za/pages/contact",
+  },
   openGraph: {
     title: "Contact Us | Six Foot Design Co",
     description:
-      "Ready to partner with us on a project? Drop us an email or fill in the form and we'll be in touch shortly.",
+      "Ready to partner with us on a project? Drop us an email or fill in the form and we’ll be in touch shortly.",
     url: "https://www.sixfootdesignco.co.za/pages/contact",
+    images: [
+      {
+        url: "https://www.sixfootdesignco.co.za/six-foot-logo-light.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Six Foot Design Co",
+      },
+    ],
   },
 };
 
