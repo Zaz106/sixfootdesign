@@ -168,7 +168,7 @@ const ContactFormSection = () => {
                 <h3>Get in Touch</h3>
                 <p className="location">Wilgeheuwel, JHB</p>
                 <p className="phone">+27 84 741 3340</p>
-                <p className="email">getintouch@sixfootdesignco.za</p>
+                <p className="email">getintouch@sixfootdesignco.co.za</p>
 
                 <div className="contact-social-links">
                   <Link
